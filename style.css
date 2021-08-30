@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Nunito+Sans:ital,wght@0,400;1,300;1,400&family=Nunito:wght@200;400&family=Overlock+SC&display=swap');
+:root{
+    --green:#27ae60;
+    --black:#2c2c54;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family:cursive;
+    outline:none;border:none;
+    text-transform: lowercase;
+    text-decoration:none ; 
+    transition:all .2s linear;
+
+}
+
+*::selection{
+    background:var(--green);
+    color:#fff;
+}
+html{
+    font-size: 90%;
+    overflow-x: hidden;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior:smooth;
+
+}
+section{
+
+    padding:10px;
+}
+.button {
+    display:inline-block;
+    margin-top:5px;
+    background:green;
+    color:#fff;
+    padding:5px;
+    font-size: 20px;
+    text-align: center;
+    cursor:pointer;
+}
+.button:hover{
+    background:greenyellow;
+}
+.heading{
+    text-align:center ;
+    color:black;
+    text-transform: uppercase;
+    padding:10px;
+    font-size:3.5rem;
+    padding-top: 2rem;
+}
+.heading span{
+    color:green;
+    text-transform: uppercase;
+}
+.header1{
+background:#eee;
+display:flex;
+align-items:center;
+justify-content: space-between;
+padding:2rem 9%;
+color: green;
+}
+.logo {
+    color:var(--black);
+    font-weight: bolder;
+    font-size:3rem;
+    color: red;
+
+}
+.logo i{
+    color:green;
+    padding-right:.5rem;
+}
+.header1 .search-box-container{
+    display: flex;
+    height:2rem;
+}
+.header1 .search-box-container #search-box{
+    height:100%;
+    width:100%;
+    font-size:25px ;
+    color:#333;
+    border:.1rem solid rgba(0,0,0,.3);
+    text-transform:none;
+}
+.header1 .search-box-container label{
+    height:100%;
+    width:15px;;
+    font-size:25px;
+    line-height:1px;
+    color:green;
+    text-align:center;
+    cursor:pointer;
+    padding:10px;
+
+}
+.header1 .search-box-container label:hover{
+    color:green;
+}
+.header2{
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:10px;
+    box-shadow:coral;
+    position:relative;
+    }
+    .header2 .navbar a{
+        padding:10px;
+        font-size:1.5rem;
+        border-radius:.5rem;
+        color:black;
+        font-family:cursive;
+    }
+
+.header2 .navbar a:hover{
+    
+    color:lime;
+}
+
+.header2 .icons a{
+    font-size: 1.5rem;
+    color:black;
+    padding-left:1rem;
+}
+.header2 .icons a:hover{
+    color:lime;
+
+}
+
+#menubar{
+    fontsize:3rem;
+    border-radius: .5rem;
+    border:1px solid black;
+    padding:10px;
+    color:black;
+    cursor: pointer;
+    display:none;
+    
+    
+}
+
+
+.home{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.home .image{
+    padding-right:40px;
+}
+
+.home .content  span{
+    font-size:65px;
+    color:darkgreen;
+
+    
+
+}
+.home .content h3{
+    font-size:30px;
+    color:black;
+}
+.category .box-container{
+    display:flex;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.category .box-container .box{
+    border:1px solid black;
+    border-radius:.5rem;
+    text-align: center;  
+    flex:2 2 50px;
+    padding:20px;
+    margin-left:20px;
+}
+.category .box-container .box h3{
+    font-size: 20px;
+    font-family: cursive;
+}
+.category .box-container .box p{
+    font-size:25px;
+    color:black;
+}
+
+
+.product .box-container {
+    display:flex;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.product .box-container .box{
+    border:1px solid black;
+    border-radius:.5rem;
+    text-align: center;  
+    flex:2 2 50px;
+    padding:20px;
+    margin-left:20px;
+   
+}
+
+.product2 .box-container {
+    display:flex;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.product2 .box-container .box{
+    border:1px solid black;
+    border-radius:.5rem;
+    text-align: center;  
+    flex:2 2 50px;
+    padding:20px;
+    margin-left:20px;
+   
+}
+
+.product .box-container .box img{
+
+    height:10rem;
+    
+
+}
+.product2 .box-container .box img{
+
+    height:10rem;
+    
+
+}
+
+        
+.product .box-container .box .discount{
+
+    color:green;
+    background: rgba(0,255,0,.1);
+    float:left;
+
+}
+
+.product2 .box-container .box .discount{
+
+    color:green;
+    background: rgba(0,255,0,.1);
+    float:left;
+    top:2px;
+}
+
+.product .box-container .box .icons a{
+    color:black;
+    float:right;
+}
+
+.product2 .box-container .box .icons a{
+    color:black;
+    float:right;
+}
+
+.product .box-container .box .icons a:hover{
+    
+    color:green;
+}
+
+
+.product2 .box-container .box .icons a:hover{
+    
+    color:green;
+}
+
+.product .box-container .box h3{
+    font-family:cursive;
+    font-size: 20px;
+}
+.product2 .box-container .box h3{
+    font-family:cursive;
+    font-size: 20px;
+}
+.product .box-container .box .stars i{
+    font-size:1rem;
+    color:gold;
+}
+.product2 .box-container .box .stars i{
+    font-size:1rem;
+    color:gold;
+}
+.product .box-container .box .price{
+    color:#333;
+    padding:.5rem 0;
+    font-size:2rem;
+}
+.product .box-container .box .price span{
+    font-size: 1.5rem;
+    color:#999;
+    text-decoration: line-through;
+    
+}
+.product2 .box-container .box .price{
+    color:#333;
+    padding:.5rem 0;
+    font-size:2rem;
+}
+.product2 .box-container .box .price span{
+    font-size: 1.5rem;
+    color:#999;
+    text-decoration: line-through;
+    
+    
+}
+.product .box-container .box .price:hover{
+    color:green;
+}
+.product2 .box-container .box .price:hover{
+    color:green;
+}
+.product .box-container .box .price:hover span{
+    color:green;
+}
+.product2 .box-container .box .price:hover span{
+    color:green;
+}
+
+
+.product .box-container .box .quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.product2 .box-container .box .quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.product2 .box-container .box .quantity input{
+    border:.1px solid black;
+    width:50px;
+    font-weight: bolder;
+    color:black;
+    background: rgba(0,0,0,.05);
+
+
+}
+.product .box-container .box .quantity input{
+    border:.1px solid black;
+    font-weight: bolder;
+    color:black;
+    background: rgba(0,0,0,.05);
+    width:50px;
+
+}
+.product .box-container .box .button{
+    display: block;
+}
+.product2 .box-container .box .button{
+    display: block;
+}
+
+
+.deal{
+    background-color: linen;
+    background-position: center;
+    background-size: cover;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    border: 1px solid olivedrab;
+    
+}
+.deal .content{
+    max-width: 50rem;
+}
+.deal .content .title{
+    font-size: 4rem;
+    color:black;
+
+}
+.deal .content p{
+font-size: 1.7rem;
+padding:1rem 0;
+color:#333;
+}
+.deal .content .count-down{
+    display:flex;
+    gap:1rem;
+    padding:5px;
+    border: 1px solid orange;
+}
+.deal .content .count-down .box{
+    width:9rem;
+    text-align:center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:1px solid black;
+    width:15%;
+    height:90%;
+    margin: 10px;
+
+    
+
+}
+
+.deal .content .count-down .box h3{
+    color:black;
+    background-color: #fff;
+    height:4rem;
+    line-height:4rem;
+    width:20px;
+    font-size:5rem;
+}
+.deal .content .count-down .box span{
+    display: block;
+    background:orange;
+    color:#000;
+    padding:2px;
+    font-size:1.5rem;
+    text-align: center;  
+
+   
+}
+.contact form {
+    text-align: center;
+    border: 1px solid black;
+    padding-right:1px;
+    margin-bottom:30px;
+    
+}
+
+.contact form .button{
+    padding-top:10px;
+}
+
+.contact form .inputBox{ 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.contact form .inputBox input, .contact  textarea{
+    padding: 10px;
+    font-size: 1.5rem;
+    background: #f7f7f7;
+    text-transform: none;
+    margin: 5px 0;
+    border:.1rem solid black;
+    width:45%;
+
+}
+.contact h1 span{
+    background: var(--green);
+    color:green;
+    font-family: cursive;
+} 
+.contact h1 {
+   text-align: center;
+   font-family:cursive;
+}
+.contact form textarea{
+    height:20rem;
+    resize:none;
+    width:100%;
+    height:100px
+}
+
+.news{
+    background: url(last.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding:50px;
+    margin-bottom: 30px;
+}
+
+.news h3{
+    font-size: 3rem; 
+    color:green;
+
+}
+.news form{
+    min-width:55rem;
+    display: flex;
+    align-items: center;
+    margin:10px auto;
+    padding:1.5rem;
+    height:30px;
+}
+
+
+
+.footer .box-container{
+    display: flex;
+    gap:1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .footer .box-container .box{
+    padding:1rem 0;
+    flex:1 1 25rem;
+  }
+  
+  .footer .box-container .box .share a{
+    padding:0;
+    height:4rem;
+    width:4rem;
+    line-height: 4rem;
+    text-align: center;
+    
+  }
+  .footer .box-container .box .share a:hover{
+      color:lime;
+  }
+  .footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:var(--black);
+  }
+  
+  .footer .box-container .box p{
+    font-size:1.2rem;
+    color:#666;
+    padding:.7rem 0;
+  }
+  
+  .footer .box-container .box .links{
+    padding:1rem 0;
+  }
+  
+  .footer .box-container .box .links a{
+    display: block;
+    padding:.5rem 0;
+    font-size: 1.7rem;
+    color:#333;
+  }
+  
+  .footer .box-container .box .links a:hover{
+    text-decoration: underline;
+    color:var(--green);
+  }
+  
+  .footer .credit{
+    padding:2.5rem 1rem;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .footer .credit span{
+    color:var(--green);
+  }
+  
+  
+  
+  
